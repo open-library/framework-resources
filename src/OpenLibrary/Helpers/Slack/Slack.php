@@ -8,6 +8,7 @@
 
 namespace UBC\LSIT\Framework\Providers\Slack;
 
+use OpenLibray\Core\Application\ConfigurationBuilder;
 
 class Slack {
     public static function slack ($message, $sendTeaser = false, $room = "random", $icon = ":ghost:")
@@ -43,7 +44,7 @@ class Slack {
             );
 
         // You can get your webhook endpoint from your Slack settings
-        $ch = curl_init ("https://hooks.slack.com/services/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");
+        $ch = curl_init (ConfigurationBuilder::get('slack_uri'));
         curl_setopt ($ch, CURLOPT_CUSTOMREQUEST, "POST");
         curl_setopt ($ch, CURLOPT_POSTFIELDS, $data);
         curl_setopt ($ch, CURLOPT_RETURNTRANSFER, true);
