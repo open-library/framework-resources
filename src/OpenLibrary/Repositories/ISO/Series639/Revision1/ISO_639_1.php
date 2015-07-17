@@ -7,217 +7,193 @@
      */
     namespace OpenLibrary\Repositories\ISO\Series639\Revision1;
 
-    class ISO_639_1 {
+    class ISO_639_1
+    {
 
-        /* not sure about these constants but it makes label lookup so so easy */
-        const Afara = "aa";
-        const Abkhazian = "ab";
-        const Avestan = "ae";
-        const Afrikaans = "af";
-        const Akan = "ak";
-        const Amharic = "am";
-        const Aragonese = "an";
-        const Arabic = "ar";
-        const Assamese = "as";
-        const Avaric = "av";
-        const Aymara = "ay";
-        const Azerbaijani = "az";
-        const Bashkir = "ba";
-        const Belarusian = "be";
-        const Bulgarian = "bg";
-        const Bihari = "bh";
-        const Bislama = "bi";
-        const Bambara = "bm";
-        const Bengali = "bn";
-        const Tibetan = "bo";
-        const Breton = "br";
-        const Bosnian = "bs";
-        const Catalan = "ca";
-        const Chechen = "ce";
-        const Chamorro = "ch";
-        const Corsican = "co";
-        const Cree = "cr";
-        const Czech = "cs";
-        const ChurchSlavic = "cu";
-        const Chuvash = "cv";
-        const Welsh = "cy";
-        const Danish = "da";
-        const German = "de";
-        const Divehi = "dv";
-        const Dzongkha = "dz";
-        const Ewe = "ee";
-        const Greek = "el";
-        const English = "en";
-        const Esperanto = "eo";
-        const Spanish = "es";
-        const Estonian = "et";
-        const Basque = "eu";
-        const Persian = "fa";
-        const Fulah = "ff";
-        const Finnish = "fi";
-        const Fijian = "fj";
-        const Faroese = "fo";
-        const French = "fr";
-        const WesternFrisian = "fy";
-        const Irish = "ga";
-        const ScottishGaelic = "gd";
-        const Galician = "gl";
-        const Guarani = "gn";
-        const Gujarati = "gu";
-        const Manx = "gv";
-        const Hausa = "ha";
-        const Hebrew = "he";
-        const Hindi = "hi";
-        const HiriMotu = "ho";
-        const Croatian = "hr";
-        const Haitian = "ht";
-        const Hungarian = "hu";
-        const Armenian = "hy";
-        const Herero = "hz";
-        const Interlingua = "ia";
-        const Indonesian = "id";
-        const Interlingue = "ie";
-        const Igbo = "ig";
-        const SichuanYi = "ii";
-        const Inupiaq = "ik";
-        const Ido = "io";
-        const Icelandic = "is";
-        const Italian = "it";
-        const Inuktitut = "iu";
-        const Japanese = "ja";
-        const Javanese = "jv";
-        const Georgian = "ka";
-        const Kongo = "kg";
-        const Kikuyu = "ki";
-        const Kwanyama = "kj";
-        const Kazakh = "kk";
-        const Kalaallisut = "kl";
-        const Khmer = "km";
-        const Kannada = "kn";
-        const Korean = "ko";
-        const Kanuri = "kr";
-        const Kashmiri = "ks";
-        const Kurdish = "ku";
-        const Komi = "kv";
-        const Cornish = "kw";
-        const Kirghiz = "ky";
-        const Latin = "la";
-        const Luxembourgish = "lb";
-        const Ganda = "lg";
-        const Limburgish = "li";
-        const Lingala = "ln";
-        const Lao = "lo";
-        const Lithuanian = "lt";
-        const LubaKatanga = "lu";
-        const Latvian = "lv";
-        const Malagasy = "mg";
-        const Marshallese = "mh";
-        const Maori = "mi";
-        const Macedonian = "mk";
-        const Malayalam = "ml";
-        const Mongolian = "mn";
-        const Marathi = "mr";
-        const Malay = "ms";
-        const Maltese = "mt";
-        const Burmese = "my";
-        const Nauru = "na";
-        const NorwegianBokmal = "nb";
-        const NorthNdebele = "nd";
-        const Nepali = "ne";
-        const Ndonga = "ng";
-        const Dutch = "nl";
+        const Afara            = "aa";
+        const Abkhazian        = "ab";
+        const Avestan          = "ae";
+        const Afrikaans        = "af";
+        const Akan             = "ak";
+        const Amharic          = "am";
+        const Aragonese        = "an";
+        const Arabic           = "ar";
+        const Assamese         = "as";
+        const Avaric           = "av";
+        const Aymara           = "ay";
+        const Azerbaijani      = "az";
+        const Bashkir          = "ba";
+        const Belarusian       = "be";
+        const Bulgarian        = "bg";
+        const Bihari           = "bh";
+        const Bislama          = "bi";
+        const Bambara          = "bm";
+        const Bengali          = "bn";
+        const Tibetan          = "bo";
+        const Breton           = "br";
+        const Bosnian          = "bs";
+        const Catalan          = "ca";
+        const Chechen          = "ce";
+        const Chamorro         = "ch";
+        const Corsican         = "co";
+        const Cree             = "cr";
+        const Czech            = "cs";
+        const ChurchSlavic     = "cu";
+        const Chuvash          = "cv";
+        const Welsh            = "cy";
+        const Danish           = "da";
+        const German           = "de";
+        const Divehi           = "dv";
+        const Dzongkha         = "dz";
+        const Ewe              = "ee";
+        const Greek            = "el";
+        const English          = "en";
+        const Esperanto        = "eo";
+        const Spanish          = "es";
+        const Estonian         = "et";
+        const Basque           = "eu";
+        const Persian          = "fa";
+        const Fulah            = "ff";
+        const Finnish          = "fi";
+        const Fijian           = "fj";
+        const Faroese          = "fo";
+        const French           = "fr";
+        const WesternFrisian   = "fy";
+        const Irish            = "ga";
+        const ScottishGaelic   = "gd";
+        const Galician         = "gl";
+        const Guarani          = "gn";
+        const Gujarati         = "gu";
+        const Manx             = "gv";
+        const Hausa            = "ha";
+        const Hebrew           = "he";
+        const Hindi            = "hi";
+        const HiriMotu         = "ho";
+        const Croatian         = "hr";
+        const Haitian          = "ht";
+        const Hungarian        = "hu";
+        const Armenian         = "hy";
+        const Herero           = "hz";
+        const Interlingua      = "ia";
+        const Indonesian       = "id";
+        const Interlingue      = "ie";
+        const Igbo             = "ig";
+        const SichuanYi        = "ii";
+        const Inupiaq          = "ik";
+        const Ido              = "io";
+        const Icelandic        = "is";
+        const Italian          = "it";
+        const Inuktitut        = "iu";
+        const Japanese         = "ja";
+        const Javanese         = "jv";
+        const Georgian         = "ka";
+        const Kongo            = "kg";
+        const Kikuyu           = "ki";
+        const Kwanyama         = "kj";
+        const Kazakh           = "kk";
+        const Kalaallisut      = "kl";
+        const Khmer            = "km";
+        const Kannada          = "kn";
+        const Korean           = "ko";
+        const Kanuri           = "kr";
+        const Kashmiri         = "ks";
+        const Kurdish          = "ku";
+        const Komi             = "kv";
+        const Cornish          = "kw";
+        const Kirghiz          = "ky";
+        const Latin            = "la";
+        const Luxembourgish    = "lb";
+        const Ganda            = "lg";
+        const Limburgish       = "li";
+        const Lingala          = "ln";
+        const Lao              = "lo";
+        const Lithuanian       = "lt";
+        const LubaKatanga      = "lu";
+        const Latvian          = "lv";
+        const Malagasy         = "mg";
+        const Marshallese      = "mh";
+        const Maori            = "mi";
+        const Macedonian       = "mk";
+        const Malayalam        = "ml";
+        const Mongolian        = "mn";
+        const Marathi          = "mr";
+        const Malay            = "ms";
+        const Maltese          = "mt";
+        const Burmese          = "my";
+        const Nauru            = "na";
+        const NorwegianBokmal  = "nb";
+        const NorthNdebele     = "nd";
+        const Nepali           = "ne";
+        const Ndonga           = "ng";
+        const Dutch            = "nl";
         const NorwegianNynorsk = "nn";
-        const Norwegian = "no";
-        const SouthNdebele = "nr";
-        const Navajo = "nv";
-        const Chichewa = "ny";
-        const Occitan = "oc";
-        const Ojibwa = "oj";
-        const Oromo = "om";
-        const Oriya = "or";
-        const Ossetian = "os";
-        const Panjabi = "pa";
-        const Pali = "pi";
-        const Polish = "pl";
-        const Pashto = "ps";
-        const Portuguese = "pt";
-        const Quechua = "qu";
-        const RaetoRomance = "rm";
-        const Kirundi = "rn";
-        const Romanian = "ro";
-        const Russian = "ru";
-        const Kinyarwanda = "rw";
-        const Sanskrit = "sa";
-        const Sardinian = "sc";
-        const Sindhi = "sd";
-        const NorthernSami = "se";
-        const Sango = "sg";
-        const Sinhala = "si";
-        const Slovak = "sk";
-        const Slovenian = "sl";
-        const Samoan = "sm";
-        const Shona = "sn";
-        const Somali = "so";
-        const Albanian = "sq";
-        const Serbian = "sr";
-        const Swati = "ss";
-        const SouthernSotho = "st";
-        const Sundanese = "su";
-        const Swedish = "sv";
-        const Swahili = "sw";
-        const Tamil = "ta";
-        const Telugu = "te";
-        const Tajik = "tg";
-        const Thai = "th";
-        const Tigrinya = "ti";
-        const Turkmen = "tk";
-        const Tagalog = "tl";
-        const Tswana = "tn";
-        const Tonga = "to";
-        const Turkish = "tr";
-        const Tsonga = "ts";
-        const Tatar = "tt";
-        const Twi = "tw";
-        const Tahitian = "ty";
-        const Uighur = "ug";
-        const Ukrainian = "uk";
-        const Urdu = "ur";
-        const Uzbek = "uz";
-        const Venda = "ve";
-        const Vietnamese = "vi";
-        const Volapuk = "vo";
-        const Walloon = "wa";
-        const Wolof = "wo";
-        const Xhosa = "xh";
-        const Yiddish = "yi";
-        const Yoruba = "yo";
-        const Zhuang = "za";
-        const Chinese = "zh";
-        const Zulu = "zu";
-
-        public static function getLanguageCodes() {
-            $rc = new \ReflectionClass(__CLASS__);
-            return $rc->getConstants();
-        }
-
-        /* le older way */
-
-        public static function getLanguageLabelFromCode($code) {
-            if(isset(self::$languageCodes[ $code ])) {
-                return self::$languageCodes[ $code ];
-            }
-
-            return "Language not found for code [$code]";
-        }
-
-        public static function getLanguageCodeFromLabel($label) {
-            $lc = array_flip(self::$languageCodes);
-            if(isset($lc[ $label ])) {
-                return $lc[ $label ];
-            }
-
-            return "Language not found for label [$label]";
-        }
+        const Norwegian        = "no";
+        const SouthNdebele     = "nr";
+        const Navajo           = "nv";
+        const Chichewa         = "ny";
+        const Occitan          = "oc";
+        const Ojibwa           = "oj";
+        const Oromo            = "om";
+        const Oriya            = "or";
+        const Ossetian         = "os";
+        const Panjabi          = "pa";
+        const Pali             = "pi";
+        const Polish           = "pl";
+        const Pashto           = "ps";
+        const Portuguese       = "pt";
+        const Quechua          = "qu";
+        const RaetoRomance     = "rm";
+        const Kirundi          = "rn";
+        const Romanian         = "ro";
+        const Russian          = "ru";
+        const Kinyarwanda      = "rw";
+        const Sanskrit         = "sa";
+        const Sardinian        = "sc";
+        const Sindhi           = "sd";
+        const NorthernSami     = "se";
+        const Sango            = "sg";
+        const Sinhala          = "si";
+        const Slovak           = "sk";
+        const Slovenian        = "sl";
+        const Samoan           = "sm";
+        const Shona            = "sn";
+        const Somali           = "so";
+        const Albanian         = "sq";
+        const Serbian          = "sr";
+        const Swati            = "ss";
+        const SouthernSotho    = "st";
+        const Sundanese        = "su";
+        const Swedish          = "sv";
+        const Swahili          = "sw";
+        const Tamil            = "ta";
+        const Telugu           = "te";
+        const Tajik            = "tg";
+        const Thai             = "th";
+        const Tigrinya         = "ti";
+        const Turkmen          = "tk";
+        const Tagalog          = "tl";
+        const Tswana           = "tn";
+        const Tonga            = "to";
+        const Turkish          = "tr";
+        const Tsonga           = "ts";
+        const Tatar            = "tt";
+        const Twi              = "tw";
+        const Tahitian         = "ty";
+        const Uighur           = "ug";
+        const Ukrainian        = "uk";
+        const Urdu             = "ur";
+        const Uzbek            = "uz";
+        const Venda            = "ve";
+        const Vietnamese       = "vi";
+        const Volapuk          = "vo";
+        const Walloon          = "wa";
+        const Wolof            = "wo";
+        const Xhosa            = "xh";
+        const Yiddish          = "yi";
+        const Yoruba           = "yo";
+        const Zhuang           = "za";
+        const Chinese          = "zh";
+        const Zulu             = "zu";
 
         protected static $languageCodes = [
             "aa" => "Afar",
@@ -405,4 +381,31 @@
             "zh" => "Chinese",
             "zu" => "Zulu"
         ];
+
+        public static function getLanguageCodes ()
+        {
+            $rc = new \ReflectionClass(__CLASS__);
+            return $rc->getConstants ();
+        }
+
+        /* le older way - probs want to remove the below */
+
+        public static function getLanguageLabelFromCode ($code)
+        {
+            if (isset(self::$languageCodes[$code])) {
+                return self::$languageCodes[$code];
+            }
+
+            return "Language not found for code [$code]";
+        }
+
+        public static function getLanguageCodeFromLabel ($label)
+        {
+            $lc = array_flip (self::$languageCodes);
+            if (isset($lc[$label])) {
+                return $lc[$label];
+            }
+
+            return "Language not found for label [$label]";
+        }
     }
