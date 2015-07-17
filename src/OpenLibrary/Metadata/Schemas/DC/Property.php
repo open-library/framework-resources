@@ -1,13 +1,9 @@
 <?php
-    /**
-     * Created by PhpStorm.
-     * User: hajime
-     * Date: 15-07-16
-     * Time: 23:58
-     */
-    namespace UBC\LSIT\OpenCollections\Metadata\Schemas\DC;
 
-    class Schema {
+
+    namespace OpenLibrary\Metadata\Schemas\DC;
+
+    class Property {
 
         protected $uri = "http://purl.org/dc/elements/1.1/";
 

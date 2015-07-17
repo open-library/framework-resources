@@ -6,16 +6,16 @@
      * Time: 5:49 PM
      */
 
-    namespace UBC\LSIT\OpenCollections\Metadata\Schemas\DC;
+    namespace OpenLibrary\Metadata\Schemas\DC\Properties;
+    use OpenLibrary\Metadata\Schemas\DC\Property;
 
-
-    class Publisher extends Schema
+    class Subject extends Property
     {
-        protected $uri = "http://purl.org/dc/elements/1.1/publisher";
+        protected $uri = "http://purl.org/dc/elements/1.1/subject";
 
-        protected $label = "Publisher";
+        protected $label = "Subject";
 
-        protected $term = "publisher";//becomes dc.contributor
+        protected $term = "subject";//becomes dc.contributor
 
         public function __construct($value,$label = false){
             if(!$label){

@@ -6,16 +6,16 @@
      * Time: 5:49 PM
      */
 
-    namespace UBC\LSIT\OpenCollections\Metadata\Schemas\DC;
+    namespace OpenLibrary\Metadata\Schemas\DC\Properties;
+    use OpenLibrary\Metadata\Schemas\DC\Property;
 
-
-    class Type extends Schema
+    class Rights extends Property
     {
-        protected $uri = "http://purl.org/dc/elements/1.1/type";
+        protected $uri = "http://purl.org/dc/elements/1.1/rights";
 
-        protected $label = "Type";
+        protected $label = "Rights";
 
-        protected $term = "type";//becomes dc.contributor
+        protected $term = "rights";//becomes dc.contributor
 
         public function __construct($value,$label = false){
             if(!$label){
