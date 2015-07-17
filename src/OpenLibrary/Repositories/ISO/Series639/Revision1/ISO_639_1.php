@@ -5,7 +5,7 @@
      * Date: 01/05/2015
      * Time: 11:50 AM
      */
-    namespace UBC\LSIT\OpenCollections\Repositories\ISO\Series639\Revision1;
+    namespace OpenLibrary\Repositories\ISO\Series639\Revision1;
 
     class ISO_639_1 {
 
