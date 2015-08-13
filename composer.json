@@ -7,6 +7,12 @@
         {
             "name": "Stefan Khan-Kernahan",
             "email": "stefan.khan-kernahan@ubc.ca"
+        },
+        {
+            "name": "Sean McNamara",
+            "email": "sean.mcnamara@ubc.ca",
+            "homepage": "http://seanmcn.com",
+            "role": "Backend Developer"
         }
     ],
     "require": {
