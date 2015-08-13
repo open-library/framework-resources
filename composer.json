@@ -6,7 +6,9 @@
     "authors": [
         {
             "name": "Stefan Khan-Kernahan",
-            "email": "stefan.khan-kernahan@ubc.ca"
+            "email": "stefan.khan-kernahan@ubc.ca",
+            "homepage": "http://skkit.com",
+            "role": "Architect/Backend Developer"
         },
         {
             "name": "Sean McNamara",
