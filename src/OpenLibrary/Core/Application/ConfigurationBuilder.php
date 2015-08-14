@@ -8,6 +8,10 @@ class ConfigurationBuilder
     private static $ini = [];
     private static $initialized = false;
 
+    /**
+     * @param $env
+     * @param $ini
+     */
     public static function set ($env, $ini)
     {
         $ini['environment'] = $env;
@@ -15,6 +19,11 @@ class ConfigurationBuilder
         self::$initialized = true;
     }
 
+    /**
+     * @param $key
+     * @param null $default
+     * @return null
+     */
     public static function get ($key, $default = null)
     {
         if (MC::get ('api_config')) {
@@ -26,16 +35,26 @@ class ConfigurationBuilder
         return $default;
     }
 
+    /**
+     * @return array
+     */
     public static function getAll ()
     {
         return self::$ini;
     }
 
+    /**
+     * @return bool
+     */
     public static function initialized ()
     {
         return self::$initialized;
     }
 
+    /**
+     * @param $initFilePath
+     * @return array
+     */
     public static function init ($initFilePath){
         $tmp = parse_ini_file ($initFilePath, true);
         if ( !isset($_SERVER['SERVER_NAME'])) {

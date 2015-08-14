@@ -30,6 +30,9 @@
          */
         private static $jLogger;
 
+        /**
+         *
+         */
         private static function _init()
         {
             if (self::$initialized) return;
@@ -51,10 +54,16 @@
             self::$initialized = true;
         }
 
+        /**
+         * @param $message
+         */
         private static function addLogMessage($message){
             error_log($message);
         }
 
+        /**
+         * @param $message
+         */
         public static function addAlert($message)
         {
             if (!self::$initialized) {
@@ -67,6 +76,9 @@
             self::$jLogger->addAlert($message);
         }
 
+        /**
+         * @param $message
+         */
         public static function addCritical($message)
         {
             if (!self::$initialized) {
@@ -79,6 +91,9 @@
             self::$jLogger->addCritical($message);
         }
 
+        /**
+         * @param $message
+         */
         public static function addDebug($message)
         {
             if (!self::$initialized) {
@@ -91,6 +106,9 @@
             self::$jLogger->addDebug($message);
         }
 
+        /**
+         * @param $message
+         */
         public static function addEmergency($message)
         {
             if (!self::$initialized) {
@@ -103,6 +121,9 @@
             self::$jLogger->addEmergency($message);
         }
 
+        /**
+         * @param $message
+         */
         public static function addError($message)
         {
             if (!self::$initialized) {
@@ -115,6 +136,9 @@
             self::$jLogger->addError($message);
         }
 
+        /**
+         * @param $message
+         */
         public static function addInfo($message)
         {
             if (!self::$initialized) {
@@ -127,6 +151,9 @@
             self::$jLogger->addInfo($message);
         }
 
+        /**
+         * @param $message
+         */
         public static function addNotice($message)
         {
             if (!self::$initialized) {
@@ -139,6 +166,9 @@
             self::$jLogger->addNotice($message);
         }
 
+        /**
+         * @param $message
+         */
         public static function addWarning($message)
         {
             if (!self::$initialized) {

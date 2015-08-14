@@ -195,6 +195,9 @@
         const Chinese          = "zh";
         const Zulu             = "zu";
 
+        /**
+         * @var array
+         */
         protected static $languageCodes = [
             "aa" => "Afar",
             "ab" => "Abkhazian",
@@ -382,14 +385,20 @@
             "zu" => "Zulu"
         ];
 
+        /**
+         * @return array
+         */
         public static function getLanguageCodes ()
         {
             $rc = new \ReflectionClass(__CLASS__);
             return $rc->getConstants ();
         }
 
+        /**
+         * @param $code
+         * @return string
+         */
         /* le older way - probs want to remove the below */
-
         public static function getLanguageLabelFromCode ($code)
         {
             if (isset(self::$languageCodes[$code])) {
@@ -399,6 +408,10 @@
             return "Language not found for code [$code]";
         }
 
+        /**
+         * @param $label
+         * @return string
+         */
         public static function getLanguageCodeFromLabel ($label)
         {
             $lc = array_flip (self::$languageCodes);
