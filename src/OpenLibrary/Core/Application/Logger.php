@@ -1,6 +1,6 @@
 <?php
 
-    namespace OpenLibray\Core\Application;
+    namespace OpenLibrary\Core\Application;
 
     use Monolog\Handler\StreamHandler;
     use Monolog\Handler\ChromePHPHandler;

@@ -8,7 +8,7 @@
 
 namespace OpenLibrary\Helpers\Slack;
 
-use OpenLibray\Core\Application\ConfigurationBuilder;
+use OpenLibrary\Core\Application\ConfigurationBuilder;
 
 class Slack {
     public static function slack ($message, $sendTeaser = false, $room = "random", $icon = ":ghost:")
